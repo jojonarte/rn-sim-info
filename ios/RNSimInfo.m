@@ -11,18 +11,19 @@
 }
 RCT_EXPORT_MODULE(RNSimInfo)
 
-- (NSString *) countryCode
-{
-    CTCarrier *carrier = [[CTTelephonyNetworkInfo new] subscriberCellularProvider];
-    NSString *countryCode = [carrier.isoCountryCode;
-
-    return @"TEST";//countryCode;
-}
-
 - (NSDictionary *) constantsToExport
 {
+    CTCarrier *carrier = [[CTTelephonyNetworkInfo new] subscriberCellularProvider];
+    NSString *countryCode = carrier.isoCountryCode;
+    NSString *mobileCountryCode = carrier.mobileCountryCode;
+    NSString *mobileNetworkCode = carrier.mobileNetworkCode;
+    NSString *carrierName = carrier.mobileCountryCode;
+
     return @{
-        @"countryCode": self.countryCode,
+        @"countryCode": countryCode,
+        @"mobileCountryCode": mobileCountryCode,
+        @"mobileNetworkCode": mobileNetworkCode,
+        @"carrierName": carrierName,
     };
 }
 @end
