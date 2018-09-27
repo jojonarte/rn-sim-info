@@ -20,10 +20,10 @@ RCT_EXPORT_MODULE(RNSimInfo)
     NSString *carrierName = carrier.mobileCountryCode;
 
     return @{
-        @"countryCode": countryCode,
-        @"mobileCountryCode": mobileCountryCode,
-        @"mobileNetworkCode": mobileNetworkCode,
-        @"carrierName": carrierName,
+        @"countryCode": countryCode ?: "",
+        @"mobileCountryCode": mobileCountryCode ?: "",
+        @"mobileNetworkCode": mobileNetworkCode ?: "",
+        @"carrierName": carrierName ?: "",
     };
 }
 @end
