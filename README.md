@@ -1,5 +1,5 @@
 
-# react-native-sim-info
+# rn-sim-info
 
 ## Getting started
 
