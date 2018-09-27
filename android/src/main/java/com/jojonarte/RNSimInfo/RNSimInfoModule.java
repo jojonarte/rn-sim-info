@@ -1,5 +1,5 @@
 
-package com.reactlibrary;
+package com.jojonarte.RNSimInfo;
 
 import android.content.Context;
 import android.telephony.TelephonyManager;
