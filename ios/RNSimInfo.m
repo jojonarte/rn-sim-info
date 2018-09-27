@@ -22,7 +22,7 @@ RCT_EXPORT_MODULE(RNSimInfo)
 - (NSDictionary *) constantsToExport
 {
     return @{
-        @"countryCode": countryCode,
+        @"countryCode": self.countryCode,
     };
 }
 @end
