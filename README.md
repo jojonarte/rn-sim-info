@@ -39,7 +39,9 @@
 ```javascript
 import RNSimInfo from 'rn-sim-info';
 
-// TODO: What to do with the module?
-RNSimInfo;
+RNSimInfo.getCountryCode(); // returns iso Country code ex: 'us', 'jp', 'au', etc
+RNSimInfo.getMobileCountryCode(); // returns mobile country code ,seems different on each platform.
+RNSimInfo.getNetworkCode(); // returns network code ,seems different on each platform.
+RNSimInfo.getCarrierName(); // returns carrier name/company name ex: T-Mobile, Verizon, etc.
 ```
   
