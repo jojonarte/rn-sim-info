@@ -1,4 +1,3 @@
-
 {
   "name": "rn-sim-info",
   "version": "1.0.2",
@@ -8,7 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "react-native", "sim card", "carrier", "country code"
+    "react-native",
+    "sim card",
+    "carrier",
+    "country code"
   ],
   "author": "Jojo Narte",
   "license": "",
