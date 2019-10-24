@@ -45,3 +45,5 @@ RNSimInfo.getNetworkCode(); // returns network code ,seems different on each pla
 RNSimInfo.getCarrierName(); // returns carrier name/company name ex: T-Mobile, Verizon, etc.
 ```
   
+## fallback values
+In each function you can pass a fallback value to default the return value into it if the library can't retrieve anything from your device.
